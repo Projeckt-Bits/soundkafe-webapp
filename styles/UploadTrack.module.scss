@@ -1,0 +1,71 @@
+.BaseDiv {
+  position: relative;
+  justify-content: center;
+}
+.Title {
+  position: relative;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+  text-align: center;
+}
+.StringInput {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 27vw;
+  height: 3vw;
+  border: none;
+  border-radius: 10vw;
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
+  outline-color: var(--ForeGroundGradientColor1);
+}
+.Button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 27vw;
+  height: 3vw;
+  border: none;
+  border-radius: 10vw;
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    45deg,
+    var(--ForeGroundGradientColor1),
+    var(--ForeGroundGradientColor2)
+  );
+  cursor: pointer;
+}
+.LabelButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 27vw;
+  height: 3vw;
+  border: none;
+  border-radius: 10vw;
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    45deg,
+    var(--ForeGroundGradientColor1),
+    var(--ForeGroundGradientColor2)
+  );
+  cursor: pointer;
+}
+
+#file-chosen{
+  margin-left: 0.3rem;
+  font-family: sans-serif;
+}

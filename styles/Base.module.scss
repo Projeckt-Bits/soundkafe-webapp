@@ -1,0 +1,162 @@
+.Base {
+  height: 48vw;
+}
+.Base_Base {
+  position: relative;
+  top: -42vw;
+  height: 48vw;
+}
+.Asset1 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 23vw;
+  top: 5vw;
+  z-index: 2;
+}
+.Asset2 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 5vw;
+  top: 4vw;
+  z-index: 2;
+}
+.Asset3 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 12vw;
+  top: 32vw;
+  z-index: 2;
+}
+.Asset4 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 5vw;
+  top: 12vw;
+  z-index: 2;
+}
+.Asset5 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 39vw;
+  top: 24vw;
+  z-index: 2;
+}
+.Asset6 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 51vw;
+  top: -15vw;
+  z-index: 2;
+}
+.Asset7 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 86vw;
+  top: -17vw;
+  z-index: 2;
+}
+.Asset8 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 90vw;
+  top: -14vw;
+  z-index: 2;
+}
+.Asset9 {
+  height: 4vw;
+  width: 4vw;
+  position: relative;
+  left: 88vw;
+  top: -6vw;
+  z-index: 2;
+}
+.Asset10 {
+  height: 7vw;
+  width: 7vw;
+  position: relative;
+  left: 56vw;
+  top: -33vw;
+  z-index: 2;
+}
+.Asset10Copy {
+  height: 7vw;
+  width: 7vw;
+  position: relative;
+  left: 77vw;
+  top: -12vw;
+  z-index: 2;
+}
+.Asset11 {
+  height: 36vw;
+  width: 36vw;
+  position: relative;
+  left: 45vw;
+  top: -45vw;
+  z-index: 2;
+}
+.Blob1 {
+  position: relative;
+  height: 21vw;
+  width: 21vw;
+  background-color: var(--ForeGroundGradientColor2);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(12vw);
+  animation: Blob1Animation 12s linear infinite;
+}
+.Blob2 {
+  position: relative;
+  left: 72vw;
+  top: 3vw;
+  height: 21vw;
+  width: 21vw;
+  border-radius: 50%;
+  background-color: var(--ForeGroundGradientColor1);
+  z-index: 1;
+  filter: blur(12vw);
+  animation: Blob2Animation 12s linear infinite;
+}
+@keyframes Blob1Animation {
+  0% {
+    background-color: var(--ForeGroundGradientColor2);
+  }
+  50% {
+    background-color: var(--ForeGroundGradientColor1);
+  }
+  100% {
+    background-color: var(--ForeGroundGradientColor2);
+  }
+}
+@keyframes Blob2Animation {
+  0% {
+    background-color: var(--ForeGroundGradientColor1);
+  }
+  50% {
+    background-color: var(--ForeGroundGradientColor2);
+  }
+  100% {
+    background-color: var(--ForeGroundGradientColor1);
+  }
+}
+.Slogan {
+  position: relative;
+  top: -72vw;
+  left: 12vw;
+  font-size: 4vw;
+  color: var(--ForeGroundGradientColor1);
+}
+.Slogan1 {
+  position: relative;
+  top: -72vw;
+  left: 12vw;
+  font-size: 1.9vw;
+  color: rgb(255, 255, 255);
+}
