@@ -150,9 +150,10 @@ export default function Home() {
           placeholder="Please Enter Collection Name Here!"
           required
         />
-        <div className={Styles.TrackFileUpload}>
+        
+        {/*<div className={Styles.TrackFileUpload}>
           <h3 className={Styles.Title}>Upload Track File</h3>
-          {/*actual upload which is hidden*/}
+          //actual upload which is hidden
           <input
             className={Styles.ActualUploadBtn}
             type="file"
@@ -163,19 +164,19 @@ export default function Home() {
             }}
           />
 
-          {/*ustom upload button*/}
+          custom upload button
           <label className={Styles.LabelButton} for="Actual-Upload-Button">
             Choose File
           </label>
 
-          {/*name of file chosen*/}
+          name of file chosen
           <h2 className={Styles.Title} id="file-chosen">
             No File Chosen!
           </h2>
           <button className={Styles.Button} onClick={UploadTrackFile}>
             Upload Track File
           </button>
-        </div>
+          </div>**/}
         <h3 className={Styles.Title}>Url</h3>
         <input
           className={Styles.StringInput}
