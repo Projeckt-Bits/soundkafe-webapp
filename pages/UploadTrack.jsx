@@ -20,6 +20,10 @@ import Styles from "../styles/UploadTrack.module.scss";
 
 export default function Home() {
   //Variables
+  var folderPath = "";
+  var storageUrl = "";
+  var playListName = "";
+  var subPlayListName = "";
   var creatorName = "";
   var trackName = "";
   var trackId = "";
@@ -58,19 +62,20 @@ export default function Home() {
 
     creatorName = document.getElementById("creatorName").value;
     trackName = document.getElementById("trackName").value;
-    collectionName = document.getElementById("collectionName").value;
-    url = document.getElementById("url").value;
+    folderPath = document.getElementById("folderPath").value;
     tags = document.getElementById("tags").value;
+
+    storageUrl = folderPath + trackName + ".mp3";
 
     const sfxCounterSnap = await getDoc(sfxCounter);
     pullCounterValue = sfxCounterSnap.data().pullCounterValue;
     pushCounterValue = pullCounterValue + 1;
     trackId = pushCounterValue.toString();
 
-    await setDoc(doc(db, collectionName, trackId), {
+    await setDoc(doc(db, "soundEffects", trackId), {
       creatorName: creatorName,
       trackName: trackName,
-      url: url,
+      storageUrl: storageUrl,
     });
 
     await setDoc(doc(db, "counters", "sfxCounter"), {
@@ -142,12 +147,12 @@ export default function Home() {
           placeholder="Please Enter Track Name Here!"
           required
         />
-        <h3 className={Styles.Title}>Collection Name</h3>
+        <h3 className={Styles.Title}>Folder Path</h3>
         <input
           className={Styles.StringInput}
           type="text"
-          id="collectionName"
-          placeholder="Please Enter Collection Name Here!"
+          id="folderPath"
+          placeholder="Please Enter Folder Path Here! Include Forward Slashes!"
           required
         />
         
@@ -176,7 +181,7 @@ export default function Home() {
           <button className={Styles.Button} onClick={UploadTrackFile}>
             Upload Track File
           </button>
-          </div>**/}
+          </div>
         <h3 className={Styles.Title}>Url</h3>
         <input
           className={Styles.StringInput}
@@ -184,7 +189,7 @@ export default function Home() {
           id="url"
           placeholder="Retrieving Track Url..."
           required
-        />
+        />**/}
         <h3 className={Styles.Title}>Tags In CSV Format</h3>
         <input
           className={Styles.StringInput}
