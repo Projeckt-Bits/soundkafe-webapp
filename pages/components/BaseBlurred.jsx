@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Styles from "../../styles/Base.module.scss";
+import Styles from "../../styles/BaseBlurred.module.scss";
 import Asset1 from "../../public/images/vectors/SoundKafe Web App Design Assets/Asset (1).svg";
 import Asset2 from "../../public/images/vectors/SoundKafe Web App Design Assets/Asset (2).svg";
 import Asset3 from "../../public/images/vectors/SoundKafe Web App Design Assets/Asset (3).svg";

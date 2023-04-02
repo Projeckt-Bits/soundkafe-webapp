@@ -22,8 +22,6 @@ export default function Home() {
   //Variables
   var folderPath = "";
   var storageUrl = "";
-  var playListName = "";
-  var subPlayListName = "";
   var creatorName = "";
   var trackName = "";
   var trackId = "";
@@ -62,6 +60,7 @@ export default function Home() {
 
     creatorName = document.getElementById("creatorName").value;
     trackName = document.getElementById("trackName").value;
+    collectionName = document.getElementById("collectionName").value;
     folderPath = document.getElementById("folderPath").value;
     tags = document.getElementById("tags").value;
 
@@ -72,10 +71,11 @@ export default function Home() {
     pushCounterValue = pullCounterValue + 1;
     trackId = pushCounterValue.toString();
 
-    await setDoc(doc(db, "soundEffects", trackId), {
+    await setDoc(doc(db, "soundTracks", trackId), {
       creatorName: creatorName,
       trackName: trackName,
       storageUrl: storageUrl,
+      collectionName: collectionName,
     });
 
     await setDoc(doc(db, "counters", "sfxCounter"), {
@@ -145,6 +145,14 @@ export default function Home() {
           type="text"
           id="trackName"
           placeholder="Please Enter Track Name Here!"
+          required
+        />
+        <h3 className={Styles.Title}>Collection Name [Also Include Sub-Collections(If Any)]</h3>
+        <input
+          className={Styles.StringInput}
+          type="text"
+          id="collectionName"
+          placeholder="Please Enter Collection Name Here!"
           required
         />
         <h3 className={Styles.Title}>Folder Path</h3>

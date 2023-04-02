@@ -1,0 +1,32 @@
+.NavBar {
+    height: 20vw;
+}
+
+.LogoDiv {
+    margin-top: 2vw;
+  margin-left: 9vw;
+  position: relative;
+  width: 3.6vw;
+  height: 3.6vw;
+}
+
+.NavUl {
+    position: relative;
+    margin-left: 62.6vw;
+    margin-top: -3vw;
+}
+
+.NavLi {
+  display: inline-block;
+  font-size: 1vw;
+  color: rgb(150, 150, 150);
+  text-align: center;
+  padding-right: 2vw;
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.NavLi:hover {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
