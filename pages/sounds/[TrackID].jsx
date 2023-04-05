@@ -50,27 +50,27 @@ export default function TrackID() {
 
   return (
     <>
+      <NavBar />
       <div className={Styles.BaseContainer}>
-        <NavBar className={Styles.NavBar} />
         <Base />
+      </div>
 
-        <div className={Styles.Container}>
-          <h2 className={Styles.TrackName}>{trackName}</h2>
+      <div className={Styles.Container}>
+        <h2 className={Styles.TrackName}>{trackName}</h2>
 
-          <audio controls id="audioPlayer" className={Styles.Player}>
-            <source type="audio/mp3" />
-          </audio>
+        <audio controls id="audioPlayer" className={Styles.Player}>
+          <source type="audio/mp3" />
+        </audio>
 
-          <h2 className={Styles.TrackDetails}>
-            This Sound Track was composed by {creatorName}.<br></br>
-            Recorded by Brauner VM1S.<br></br>
-            Available in 48000 Hz, suitable for all sorts of Audio-Processing.
-            <br></br>
-            Hoping that You will love our content, we look forward to a
-            favourable response.<br></br>
-            Thank You!
-          </h2>
-        </div>
+        <h2 className={Styles.TrackDetails}>
+          This Sound Track was composed by {creatorName}.<br></br>
+          Recorded by Brauner VM1S.<br></br>
+          Available in 48000 Hz, suitable for all sorts of Audio-Processing.
+          <br></br>
+          Hoping that You will love our content, we look forward to a favourable
+          response.<br></br>
+          Thank You!
+        </h2>
       </div>
     </>
   );

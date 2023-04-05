@@ -1,8 +1,8 @@
-.NavBar {
-  z-index: 3;
-}
 .BaseContainer {
-  height: 48vw
+  position: relative;
+  top: -20vw;
+  z-index: -3;
+  height: 48vw;
 }
 .Container {
   position: relative;
@@ -14,9 +14,9 @@
   font-size: 3vw;
 }
 .Player {
-    margin-top: 5vw;
+  margin-top: 5vw;
 }
 .TrackDetails {
-    margin-top: 5vw;
-    font-size: 1.2vw;
+  margin-top: 5vw;
+  font-size: 1.2vw;
 }

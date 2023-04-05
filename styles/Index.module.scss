@@ -1,0 +1,40 @@
+
+
+.BaseImageContainer {
+    height: 12vw;
+  position: relative;
+  top: -20vw;
+  z-index: -3;
+}
+
+.Slogan0 {
+  position: relative;
+  top: -15vw;
+  left: 12vw;
+  font-size: 3.9vw;
+  color: var(--ForeGroundGradientColor1);
+}
+.Slogan1 {
+  position: relative;
+  top: -15vw;
+  left: 12vw;
+  font-size: 1.9vw;
+  color: rgb(255, 255, 255);
+}
+
+.ClickToActionBtn0, .ClickToActionBtn1 {
+    position: relative;
+    top: -15vw;
+    left: 9.3vw;
+    width: 12vw;
+    height: 3vw;
+    margin: 2.4vw;
+    background-color: #483285;
+    color: white;
+    font-weight: 600;
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+}

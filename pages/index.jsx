@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Base from './components/Base';
-import Styles from '../styles/Index.module.scss';
-import NavBar from './components/NavBar';
+import Head from "next/head";
+import Image from "next/image";
+import Base from "./components/Base";
+import Styles from "../styles/Index.module.scss";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
@@ -13,8 +13,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
-      <Base />
+      <div className={Styles.MainContainer}>
+        <NavBar />
+        <div className={Styles.BaseImageContainer}>
+          <Base />
+        </div>
+        <h1 className={Styles.Slogan0}>BEAT THE HEAT</h1>
+        <h2 className={Styles.Slogan1}>With Our Premium Resurces!</h2>
+        <button className={Styles.ClickToActionBtn0}>Sign Up</button>
+        <button className={Styles.ClickToActionBtn1}>Log In</button>
+      </div>
     </>
-  )
+  );
 }

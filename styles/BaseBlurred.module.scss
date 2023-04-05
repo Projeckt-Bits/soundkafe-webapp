@@ -1,7 +1,6 @@
 .Base {
   height: 48vw;
   position: relative;
-  top: -21vw;
 }
 .Base_Base {
   position: relative;
@@ -147,18 +146,4 @@
   100% {
     background-color: var(--ForeGroundGradientColor1);
   }
-}
-.Slogan {
-  position: relative;
-  top: -72vw;
-  left: 12vw;
-  font-size: 4vw;
-  color: var(--ForeGroundGradientColor1);
-}
-.Slogan1 {
-  position: relative;
-  top: -72vw;
-  left: 12vw;
-  font-size: 1.9vw;
-  color: rgb(255, 255, 255);
 }
