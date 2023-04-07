@@ -59,7 +59,7 @@ export default function TrackID() {
         <h2 className={Styles.TrackName}>{trackName}</h2>
 
         <audio controls id="audioPlayer" className={Styles.Player}>
-          <source type="audio/wav" />
+          <source type="audio/mpeg" />
         </audio>
 
         <h2 className={Styles.TrackDetails}>
