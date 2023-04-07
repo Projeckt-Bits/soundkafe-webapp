@@ -64,7 +64,7 @@ export default function Home() {
     folderPath = document.getElementById("folderPath").value;
     tags = document.getElementById("tags").value;
 
-    storageUrl = folderPath + trackName + ".mp3";
+    storageUrl = folderPath + trackName + ".wav";
 
     const sfxCounterSnap = await getDoc(sfxCounter);
     pullCounterValue = sfxCounterSnap.data().pullCounterValue;
