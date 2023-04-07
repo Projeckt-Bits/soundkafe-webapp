@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
-import { db, storage } from "../../firebase";
+import { db, storage } from "../../../firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { ref, getDownloadURL } from "firebase/storage";
 import { useState, useEffect } from "react";
-import Styles from "../../styles/Tracks.module.scss";
-import Base from "../../pages/components/BaseBlurred";
-import NavBar from "../../pages/components/NavBar";
+import Styles from "../../../styles/Tracks.module.scss";
+import Base from "../../components/BaseBlurred";
+import NavBar from "../../components/NavBar";
 
 export default function TrackID() {
   const Router = useRouter();
