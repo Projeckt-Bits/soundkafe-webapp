@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { db, storage } from "../../../firebase";
 import { doc, getDoc } from "firebase/firestore";
-import { ref, getDownloadURL } from "firebase/storage";
+import { ref, getDownloadURL, getBytes } from "firebase/storage";
 import { useState, useEffect } from "react";
 import Styles from "../../../styles/Tracks.module.scss";
 import Base from "../../components/BaseBlurred";
@@ -17,7 +17,7 @@ export default function TrackID() {
 
   useEffect(() => {
     (async () => {
-      const docRef = doc(db, "soundTracks", TrackID);
+      const docRef = doc(db, "soundEffects", TrackID);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
@@ -34,12 +34,13 @@ export default function TrackID() {
   }, [TrackID]);
 
   console.log(FetchChecker);
-  const { trackName, creatorName, storageUrl } = trackDetails;
+  const { trackName, creatorName, storageUrl, mp3downloadlink, wavdownloadlink } = trackDetails;
   console.log(storageUrl);
-  GetDownloadUrl();
+  GetDownloadUrlMp3();
 
-  async function GetDownloadUrl() {
-    const reference = ref(storage, storageUrl);
+  var reference = "";
+  async function GetDownloadUrlMp3() {
+    reference = ref(storage, storageUrl);
     await getDownloadURL(reference).then((URL) => {
       setUrl(URL);
       const audioPlayer = document.getElementById("audioPlayer");
@@ -47,6 +48,8 @@ export default function TrackID() {
     });
   }
   console.log(url);
+
+  
 
   return (
     <>
@@ -71,6 +74,9 @@ export default function TrackID() {
           response.<br></br>
           Thank You!
         </h2>
+
+        <a href={mp3downloadlink} download={trackName}><button className={Styles.ClickToActionBtn0}>Download .mp3</button></a>
+        <a href={wavdownloadlink} download={trackName}><button className={Styles.ClickToActionBtn1}>Download .wav</button></a>
       </div>
     </>
   );
