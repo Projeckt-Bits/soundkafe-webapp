@@ -11,7 +11,7 @@ export default function NavBar() {
       </div>
       <ul className={Styles.NavUl}>
         <li className={Styles.NavLi}><Link href="/">Home</Link></li>
-        <li className={Styles.NavLi}><Link href="/sounds">Access Our Sounds</Link></li>
+        <li className={Styles.NavLi}><Link href="/sounds/effects/1">Access Our Sounds</Link></li>
         <li className={Styles.NavLi}><Link href="/">Contribute</Link></li>
         <li className={Styles.NavLi}><Link href="/">About Us</Link></li>
       </ul>
